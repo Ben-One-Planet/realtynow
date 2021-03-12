@@ -1,1 +1,67 @@
+/*****************************Universal Styling*********************************************************************/
 
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+
+/*****************************Navigation Styling*********************************************************************/
+
+
+.navigation {
+    width: 100%;
+    background-color: #F5F5F5;
+    text-align: left;
+}
+
+.navigation img {
+    width: 6%;
+    padding: 15px 0;
+    display: block;
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation img {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation img {
+        width: 13%;
+        margin-left: 75px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation {
+        width: 100%;
+        background-color: #FFFFFF;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .navigation img {
+        width: 23%;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
