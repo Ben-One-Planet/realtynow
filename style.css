@@ -158,6 +158,14 @@ button {
 
 @media screen and (max-width: 768px) {
     .form {
+        width: 95%;
+        margin: 8% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .form {
         width: 100%;
         margin: 0;
         box-shadow: none;
@@ -192,5 +200,3 @@ button {
         font-size: 0.8rem;
     }
 }
-
-@media screen and (max-width: 480px) {}
