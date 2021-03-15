@@ -31,9 +31,9 @@
         <nav class="navigation">
             <img src="IMG/logo.png" alt="Realtynow logo" />
         </nav>
-        <form class="form">
+        <div class="form">
             <div class="search-results-wrapper">
-                <p class="search-paragraph-01">search homes for sale in:</p>
+                <h1 class="search-paragraph-01">search homes for sale in:</h1>
                 <p class="search-paragraph-02">Elmendorf Air Force Base, AK 99506</p>
             </div>
             <div class="form-section-one">
@@ -44,19 +44,89 @@
                     <input class="zip" id="zipThree" name="zipThree" type="text" pattern="[0-9]*">
                 </div>
             </div>
-        </form>
+            <div class="line-01">
+                <img class="linebreak" src="IMG/line.png" alt="line break" />
+            </div>
+            <div class="form-wrapper-01">
+                <section class="type-of-home">
+                    <h2>What <span>type</span> of home are you interested in?</h2>
+                    <div class="type-button-wrapper" id="myDIV">
+                        <button class="btn active">
+                            <i class="fa fa-home"></i>
+                            <p>House</p>
+                        </button>
+                        <button class="btn">
+                            <i class="fa fa-city"></i>
+                            <p>Condo</p>
+                        </button>
+                    </div>
+                </section>
+                <section class="price-range">
+                    <h2>What is your <span>price</span> range ?</h2>
+                    <div class="price-range-wrapper">
+                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                        <!--
+                        <div class="price-number-wrapper">
+                            <p>$100,000</p>
+                            <p>$1,000,000+</p>
+                        </div>
+-->
+                    </div>
+                </section>
+            </div>
+            <div class="line-01">
+                <img class="linebreak" src="IMG/line.png" alt="line break" />
+            </div>
+            <div class="form-wrapper-02">
+                <section class="beds-baths">
+                    <h2>How many <span>bedrooms</span> and <span>bathrooms</span>?</h2>
+                    <div class="subtitle-wrapper">
+                        <p>Bedrooms</p>
+                        <div class="beds-baths-options" id="bedDiv">
+                            <button class="bed-btn">Any</button>
+                            <button class="bed-btn">1+</button>
+                            <button class="bed-btn">2+</button>
+                            <button class="bed-btn activeBed">3+</button>
+                            <button class="bed-btn">4+</button>
+                            <button class="bed-btn">5+</button>
+                        </div>
+                    </div>
+                    <div class="subtitle-wrapper">
+                        <p>Bathrooms</p>
+                        <div class="beds-baths-options" id="bathDiv">
+                            <button class="bath-btn">Any</button>
+                            <button class="bath-btn">1+</button>
+                            <button class="bath-btn">1.5+</button>
+                            <button class="bath-btn activeBath">2+</button>
+                            <button class="bath-btn">3+</button>
+                            <button class="bath-btn">4+</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="credit-rating">
+                    <h2>How is your <span>credit</span> rating?</h2>
+                    <div class="credit-buttons-wrapper">
+                        <button class="credit-button">Excellent <span>720-850</span></button>
+                        <button class="credit-button">Good <span>690-719</span></button>
+                        <button class="credit-button">Fair <span>630-689</span></button>
+                        <button class="credit-button">Poor <span>300-629</span></button>
+                    </div>
+                </section>
+            </div>
+            <div class="line-01">
+                <img class="linebreak" src="IMG/line.png" alt="line break" />
+            </div>
+        </div>
     </div>
 
 
 
 
 
-    <!--
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="functions.js"></script>
--->
 </body>
 
 </html>
