@@ -704,3 +704,91 @@ button {
         color: rgba(255, 255, 255, 0.9);
     }
 }
+
+
+/*****************************Personal info Styling*********************************************************************/
+
+.personal-info-form {
+    position: relative;
+}
+
+.personal-info-form img {
+    width: 20%;
+}
+
+.house-icon {
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+}
+
+.condo-icon {
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+}
+
+.info-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.info-form label {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: lighter;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    text-align: left;
+    padding-top: 0.5rem;
+    width: 30%;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.info-form label:nth-child(1) {
+    padding-top: 0;
+}
+
+.info-form input {
+    text-align: left;
+    padding: 0.3rem 0;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #707171;
+    cursor: pointer;
+    width: 30%;
+    margin: 0.3rem auto;
+    font-family: 'Noto Sans', sans-serif;
+    color: #707171;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    outline: none;
+    max-width: 350px;
+    padding: 0.4rem 1rem;
+}
+
+.submit-button {
+    text-align: center;
+    padding: 0.3rem 0;
+    background: #04813E;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 35%;
+    font-family: 'poppins', 'sans-serif';
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    outline: none;
+    text-transform: uppercase;
+    max-width: 375px;
+    margin: 1.5rem auto 0 auto;
+}
+
+.submit-button i {
+    padding-left: 0.3rem;
+}
