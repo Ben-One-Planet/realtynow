@@ -22,6 +22,82 @@ button {
     height: 3px;
 }
 
+.form h2 {
+    font-family: 'poppins', 'sans-serif';
+    line-height: 1.4;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form h2 span {
+    color: #04813E;
+    font-weight: bold;
+}
+
+.form-wrapper-01,
+.form-wrapper-02,
+.form-wrapper-03 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.interested-in-buying,
+.search-listings,
+.type-of-home,
+.price-range,
+.beds-baths,
+.credit-rating {
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+}
+
+.credit-buttons-wrapper,
+.buying-buttons-wrapper,
+.search-buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 670px) {
+
+    .form-wrapper-01,
+    .form-wrapper-02,
+    .form-wrapper-03 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
 
 /*****************************Navigation Styling*********************************************************************/
 
@@ -124,20 +200,6 @@ button {
     padding: 2rem 1rem;
 }
 
-.form h2 {
-    font-family: 'poppins', 'sans-serif';
-    line-height: 1.4;
-    color: #000000;
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-}
-
-.form h2 span {
-    color: #04813E;
-    font-weight: bold;
-}
-
 .zip-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -228,34 +290,6 @@ button {
 
 
 
-
-.form-wrapper-01,
-.form-wrapper-02 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 2rem;
-}
-
-.type-of-home,
-.price-range {
-    -webkit-box-flex: 50%;
-    -ms-flex: 50%;
-    flex: 50%;
-    text-align: center;
-}
-
-
 .type-button-wrapper {
     padding: 2rem 0 0 0;
     display: -webkit-box;
@@ -274,7 +308,7 @@ button {
 
 .btn {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.4rem 1.5rem 1.4rem 1.5rem;
     background: #fff;
     border-radius: 50%;
     margin: 0 1.5rem;
@@ -414,18 +448,6 @@ button {
 
 @media screen and (max-width: 670px) {
 
-    .form-wrapper-01,
-    .form-wrapper-02 {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 1rem;
-    }
-
     .btn {
         padding: 1.2rem;
         margin: 0 1.5rem;
@@ -450,27 +472,6 @@ button {
 
 /*****************************form-wrapper-02 Styling*********************************************************************/
 
-
-.beds-baths,
-.credit-rating {
-    -webkit-box-flex: 50%;
-    -ms-flex: 50%;
-    flex: 50%;
-}
-
-.credit-buttons-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-top: 2rem;
-}
 
 .credit-button {
     text-align: left;
@@ -568,5 +569,138 @@ button {
         font-size: 0.7rem;
         width: 40px;
         height: 25px;
+    }
+}
+
+
+/*****************************form-wrapper-03 Styling*********************************************************************/
+
+
+
+.buying-button,
+.search-button {
+    text-align: center;
+    padding: 0.3rem 2rem;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #707171;
+    cursor: pointer;
+    width: 100%;
+    margin: 0.3rem auto;
+    max-width: 250px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #707171;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.search-button {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 670px) {
+    .search-listings {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .buying-button,
+    .search-button,
+    .credit-button {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/*****************************Tell us about yourself banner Styling*********************************************************************/
+
+
+
+.tell-about-banner {
+    background-color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+.tell-about-banner h3 {
+    color: #04813E;
+    font-family: 'poppins', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 1rem 1rem 0 1rem;
+    font-weight: 500;
+}
+
+.arrow-down-wrapper {
+    border-radius: 50%;
+    background-color: #04813E;
+    text-decoration: none;
+    text-align: center;
+    height: 27px;
+    width: 27px;
+    padding: 1.2rem;
+    margin: 0 auto;
+    position: relative;
+    bottom: -1.2rem;
+}
+
+.arrow-down-wrapper i {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+    .tell-about-banner h3 {
+        font-size: 18px;
+    }
+
+    .arrow-down-wrapper {
+        height: 20px;
+        width: 20px;
+        padding: 1rem;
+        bottom: -1rem;
+    }
+
+    .arrow-down-wrapper i {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .tell-about-banner {
+        background-image: url(IMG/mobile-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .mobile-wrapper {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+    }
+
+    .tell-about-banner h3 {
+        font-size: 16px;
+    }
+
+    .arrow-down-wrapper {
+        height: 17px;
+        width: 17px;
+        padding: 0.8rem;
+        bottom: -0.9rem;
+        background-color: rgba(4, 129, 62, 0.9);
+    }
+
+    .arrow-down-wrapper i {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.9);
     }
 }
