@@ -233,6 +233,15 @@ button {
     outline: none;
 }
 
+.mobile-top-image {
+    background-image: url(IMG/top-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .form {
         width: 95%;
@@ -281,6 +290,11 @@ button {
         margin: 0.4rem 0;
         height: 30px;
         font-size: 0.8rem;
+    }
+
+    .mobile-top-image {
+        height: 100px;
+        display: block;
     }
 }
 
@@ -653,6 +667,7 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -718,19 +733,26 @@ button {
 
 .house-icon {
     position: absolute;
-    top: 3vw;
-    left: 3vw;
+    top: 4vw;
+    left: 5vw;
 }
 
 .condo-icon {
     position: absolute;
-    top: 3vw;
-    right: 3vw;
+    top: 4vw;
+    right: 5vw;
 }
 
 .info-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
@@ -792,3 +814,82 @@ button {
 .submit-button i {
     padding-left: 0.3rem;
 }
+
+@media screen and (max-width: 1200px) {
+    .personal-info-form img {
+        width: 25%;
+    }
+
+    .house-icon {
+        top: 6vw;
+        left: 2vw;
+    }
+
+    .condo-icon {
+        top: 6vw;
+        right: 2vw;
+    }
+
+    .info-form label {
+        font-size: 0.7rem;
+        padding-top: 0.5rem;
+        width: 40%;
+    }
+
+    .info-form input {
+        padding: 0.3rem 0;
+        width: 40%;
+        margin: 0.3rem auto;
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .submit-button {
+        width: 45%;
+        font-size: 1.2rem;
+        margin: 1.5rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .house-icon {
+        top: 10vw;
+    }
+
+    .condo-icon {
+        top: 10vw;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .house-icon {
+        display: none;
+    }
+
+    .condo-icon {
+        display: none;
+    }
+
+    .info-form label {
+        font-size: 0.7rem;
+        padding-top: 0.5rem;
+        width: 80%;
+    }
+
+    .info-form input {
+        padding: 0.3rem 0;
+        width: 80%;
+        margin: 0.3rem auto;
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .submit-button {
+        width: 85%;
+        font-size: 1.2rem;
+        margin: 1.5rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {}
