@@ -892,4 +892,43 @@ button {
     }
 }
 
-@media screen and (max-width: 320px) {}
+
+/*****************************Fine Print Styling*********************************************************************/
+
+
+
+.fine-print {
+    padding: 1.5rem 3rem 3rem 3rem;
+    text-align: center;
+}
+
+.fine-print p {
+    color: #000000;
+    font-size: 12px;
+    line-height: 204%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+}
+
+.fine-print-links {
+    color: #04813E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .fine-print p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    .fine-print {
+        padding: 1.5rem;
+    }
+
+    .fine-print p {
+        font-size: 10px;
+    }
+}
