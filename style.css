@@ -402,7 +402,7 @@ button {
 .irs--big .irs-single {
     color: #04813E !important;
     text-shadow: none;
-    padding: 0.1rem 0.3rem !important;
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem !important;
     background-color: #FFF !important;
     background: #FFF !important;
     border-radius: 0px !important;
@@ -416,12 +416,16 @@ button {
     background: #04813E !important;
     -webkit-box-shadow: none;
     box-shadow: none;
+    top: 33px !important;
+    height: 7px !important;
 }
 
 .irs--big .irs-line {
     background-color: #FFF !important;
     background: #FFF !important;
     border: none !important;
+    top: 33px !important;
+    height: 7px !important;
 }
 
 .irs--big .irs-handle {
@@ -430,6 +434,9 @@ button {
     background: #04813E !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+    top: 26px !important;
+    width: 20px !important;
+    height: 20px !important;
 }
 
 .irs-from,
