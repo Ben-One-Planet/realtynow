@@ -114,7 +114,7 @@ button {
 }
 
 .navigation img {
-    width: 6%;
+    width: 10%;
     padding: 15px 0;
     display: block;
     margin-left: 150px;
@@ -122,13 +122,13 @@ button {
 
 @media screen and (max-width: 1200px) {
     .navigation img {
-        width: 10%;
+        width: 13%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .navigation img {
-        width: 13%;
+        width: 15%;
         margin-left: 75px;
     }
 }
@@ -177,13 +177,13 @@ button {
 
 .search-results-wrapper {
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #04813E;
     padding: 0.5rem 0;
 }
 
 .search-paragraph-01,
 .search-paragraph-02 {
-    color: #04813e;
+    color: #FFFFFF;
     font-size: 1rem;
 }
 
@@ -222,7 +222,7 @@ button {
 
 .zip {
     font-family: 'Noto Sans', sans-serif;
-    color: #707171;
+    color: #515353;
     font-size: 1rem;
     background-color: #FFF;
     width: 100%;
@@ -230,12 +230,12 @@ button {
     height: 39px;
     font-weight: bold;
     border-radius: 50px;
-    border: 1px solid #707171;
+    border: 1px solid #515353;
     margin-left: 13px;
     margin-right: 13px;
     display: inline-block;
     text-align: center;
-    cursor: pointer;
+    cursor: text;
     outline: none;
 }
 
@@ -331,7 +331,7 @@ button {
     background: #fff;
     border-radius: 50%;
     margin: 0 1.5rem;
-    border: 1px solid #707171;
+    border: 1px solid #515353;
     cursor: pointer;
 }
 
@@ -349,7 +349,7 @@ button {
 }
 
 .btn p {
-    color: #707171;
+    color: #515353;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: lighter;
     font-size: 1rem;
@@ -357,7 +357,7 @@ button {
 }
 
 .btn i {
-    color: #707171;
+    color: #515353;
     font-size: 1.8rem;
 }
 
@@ -387,7 +387,7 @@ button {
 }
 
 .price-number-wrapper p {
-    color: #707171;
+    color: #515353;
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     font-size: 0.8rem;
@@ -497,13 +497,13 @@ button {
     padding: 0.3rem 2rem;
     background: #fff;
     border-radius: 50px;
-    border: 1px solid #707171;
+    border: 1px solid #515353;
     cursor: pointer;
     width: 100%;
     margin: 0.3rem auto;
     max-width: 232px;
     font-family: 'Noto Sans', sans-serif;
-    color: #707171;
+    color: #515353;
     font-size: 0.9rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -546,7 +546,7 @@ button {
 .bed-btn,
 .bath-btn {
     font-family: 'Noto Sans', sans-serif;
-    color: #707171;
+    color: #515353;
     font-size: 1rem;
     margin: 0 1px;
     background-color: #FFF;
@@ -602,13 +602,13 @@ button {
     padding: 0.3rem 2rem;
     background: #fff;
     border-radius: 50px;
-    border: 1px solid #707171;
+    border: 1px solid #515353;
     cursor: pointer;
     width: 100%;
     margin: 0.3rem auto;
     max-width: 250px;
     font-family: 'Noto Sans', sans-serif;
-    color: #707171;
+    color: #515353;
     text-transform: capitalize;
     font-size: 0.9rem;
 }
@@ -769,7 +769,7 @@ button {
     font-weight: lighter;
     color: #000000;
     text-transform: capitalize;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: left;
     padding-top: 0.5rem;
     width: 30%;
@@ -786,12 +786,12 @@ button {
     padding: 0.3rem 0;
     background: #fff;
     border-radius: 50px;
-    border: 1px solid #707171;
-    cursor: pointer;
+    border: 1px solid #515353;
+    cursor: text;
     width: 30%;
     margin: 0.3rem auto;
     font-family: 'Noto Sans', sans-serif;
-    color: #707171;
+    color: #515353;
     text-transform: capitalize;
     font-size: 0.9rem;
     outline: none;
@@ -836,7 +836,7 @@ button {
     }
 
     .info-form label {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         padding-top: 0.5rem;
         width: 40%;
     }
