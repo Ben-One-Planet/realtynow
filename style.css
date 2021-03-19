@@ -299,7 +299,7 @@ button {
     }
 
     .zip {
-        margin: 0.4rem 0;
+        margin: 0;
         height: 30px;
         font-size: 0.8rem;
     }
@@ -339,6 +339,7 @@ button {
     margin: 0 1.5rem;
     border: 1px solid #515353;
     cursor: pointer;
+    -webkit-transition: 300ms border linear;
     transition: 300ms border linear;
 }
 
@@ -533,6 +534,7 @@ button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-transition: 300ms border linear;
     transition: 300ms border linear;
 }
 
@@ -1051,5 +1053,94 @@ button {
 @media screen and (max-width: 768px) {
     .background-image {
         display: none;
+    }
+}
+
+
+
+/*****************************Footer Styling*********************************************************************/
+
+
+
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 15px 150px;
+    font-size: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.desktop-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.footer-link {
+    color: #000000;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-right: 1px solid #04813E;
+}
+
+.footer-group-02 a:last-child {
+    border-right: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-group-03 {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    .footer {
+        background-color: #FFFFFF;
+    }
+
+    .desktop-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-group-02 {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        font-size: 9px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        padding: 5px;
     }
 }
