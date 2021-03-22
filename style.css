@@ -237,12 +237,6 @@ button {
     text-align: center;
     cursor: text;
     outline: none;
-    -webkit-transition: 300ms border linear;
-    transition: 300ms border linear;
-}
-
-.zip:hover {
-    border: 1px solid #04813E;
 }
 
 .mobile-top-image {
@@ -331,7 +325,7 @@ button {
     align-content: center;
 }
 
-.btn {
+.type-btn {
     text-align: center;
     padding: 1.4rem 1.5rem 1.4rem 1.5rem;
     background: #fff;
@@ -339,28 +333,22 @@ button {
     margin: 0 1.5rem;
     border: 1px solid #515353;
     cursor: pointer;
-    -webkit-transition: 300ms border linear;
-    transition: 300ms border linear;
 }
 
-.btn:hover {
-    border: 1px solid #04813E;
-}
-
-.btn.active {
+.type-btn.type-active {
     background: #04813E;
     border: 1px solid #04813E;
 }
 
-.btn.active i {
+.type-btn.type-active i {
     color: white;
 }
 
-.btn.active p {
+.type-btn.type-active p {
     color: white;
 }
 
-.btn p {
+.type-btn p {
     color: #515353;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: lighter;
@@ -368,7 +356,7 @@ button {
     padding: 0.1rem;
 }
 
-.btn i {
+.type-btn i {
     color: #515353;
     font-size: 1.8rem;
 }
@@ -459,16 +447,16 @@ button {
 
 @media screen and (max-width: 1200px) {
 
-    .btn {
+    .type-btn {
         padding: 1.2rem;
         margin: 0 1.5rem;
     }
 
-    .btn p {
+    .type-btn p {
         font-size: 0.8rem;
     }
 
-    .btn i {
+    .type-btn i {
         font-size: 1.2rem;
     }
 
@@ -486,16 +474,16 @@ button {
 
 @media screen and (max-width: 670px) {
 
-    .btn {
+    .type-btn {
         padding: 1.2rem;
         margin: 0 1.5rem;
     }
 
-    .btn p {
+    .type-btn p {
         font-size: 0.8rem;
     }
 
-    .btn i {
+    .type-btn i {
         font-size: 1.2rem;
     }
 
@@ -534,11 +522,11 @@ button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-transition: 300ms border linear;
-    transition: 300ms border linear;
 }
 
-.credit-button:hover {
+.credit-button.credit-active {
+    background: #04813E;
+    color: #fff;
     border: 1px solid #04813E;
 }
 
@@ -582,12 +570,12 @@ button {
 }
 
 
-.bed-btn.activeBed {
+.bed-btn.bed-active {
     background-color: #04813E;
     color: #fff;
 }
 
-.bath-btn.activeBath {
+.bath-btn.bath-active {
     background-color: #04813E;
     color: #fff;
 }
@@ -641,6 +629,18 @@ button {
 
 .search-button {
     max-width: 300px;
+}
+
+.buying-button.buying-active {
+    background: #04813E;
+    color: #fff;
+    border: 1px solid #04813E;
+}
+
+.search-button.search-active {
+    background: #04813E;
+    color: #fff;
+    border: 1px solid #04813E;
 }
 
 @media screen and (max-width: 670px) {
@@ -1129,6 +1129,10 @@ button {
 
     .footer-group-02 {
         padding-top: 1rem;
+    }
+
+    .mob-border {
+        border-right: none;
     }
 }
 
