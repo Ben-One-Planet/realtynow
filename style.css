@@ -148,6 +148,7 @@ button {
         width: 25%;
         margin: 0;
         height: auto;
+        -o-object-fit: contain;
         object-fit: contain;
         padding: 0;
     }
@@ -1109,7 +1110,12 @@ button {
 @media screen and (max-width: 1200px) {
     .footer {
         padding: 15px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1125,7 +1131,12 @@ button {
     }
 
     .desktop-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
