@@ -250,6 +250,15 @@ button {
     display: none;
 }
 
+.mobile-bottom-image {
+    background-image: url(IMG/bottom-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .form {
         width: 95%;
@@ -301,6 +310,10 @@ button {
     }
 
     .mobile-top-image {
+        display: block;
+    }
+    
+    .mobile-bottom-image {
         display: block;
     }
 }
