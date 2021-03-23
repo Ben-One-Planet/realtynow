@@ -148,6 +148,8 @@ button {
     .navigation img {
         width: 20%;
         margin: 0;
+        height: auto;
+        object-fit: contain;
         padding: 20px 0;
     }
 }
@@ -952,14 +954,16 @@ button {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .fine-print p {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 670px) {
 
     .fine-print {
         padding: 1.5rem;
-    }
-
-    .fine-print p {
-        font-size: 10px;
     }
 }
 
