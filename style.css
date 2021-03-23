@@ -114,7 +114,7 @@ button {
 }
 
 .navigation img {
-    width: 10%;
+    width: 9%;
     padding: 15px 0;
     display: block;
     margin-left: 150px;
@@ -787,7 +787,7 @@ button {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 0 0.5rem 0;
 }
 
 .info-form label {
@@ -818,7 +818,6 @@ button {
     margin: 0.3rem auto;
     font-family: 'Noto Sans', sans-serif;
     color: #515353;
-    text-transform: capitalize;
     font-size: 0.9rem;
     outline: none;
     max-width: 350px;
