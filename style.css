@@ -122,7 +122,7 @@ input::placeholder {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
 }
 
@@ -528,7 +528,7 @@ input::placeholder {
 
     .price-range {
         width: 100%;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 }
 
@@ -630,7 +630,7 @@ input::placeholder {
 
 @media screen and (max-width: 670px) {
     .credit-rating {
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 }
 
@@ -684,7 +684,7 @@ input::placeholder {
 
 @media screen and (max-width: 670px) {
     .search-listings {
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 }
 
