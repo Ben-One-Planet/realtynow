@@ -1,16 +1,19 @@
 //Price Range Plugin options
+var custom_values = [0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000, 550000, 600000, 650000, 700000, 750000, 800000, 850000, 900000, 950000, 1000000, 1250000, 1500000, 1750000, 2000000];
+
+// be careful! FROM and TO should be index of values array
+var my_from = custom_values.indexOf(150000);
+var my_to = custom_values.indexOf(850000);
 
 $(document).ready(function () {
     $(".js-range-slider").ionRangeSlider({
         type: "double",
-        min: 100000,
-        max: 1000000,
         hide_min_max: true,
-        from: 150000,
-        to: 850000,
+        from: my_from,
+        to: my_to,
+        values: custom_values,
         grid: false,
         skin: "big",
-        step: 50000,
         force_edges: true,
         prefix: "$",
         max_postfix: " +",

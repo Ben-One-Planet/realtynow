@@ -87,6 +87,29 @@ button {
     padding-top: 2rem;
 }
 
+input::-webkit-input-placeholder {
+    /* Edge */
+    color: #515353;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #515353;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #515353;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 670px) {
 
     .form-wrapper-01,
@@ -313,7 +336,7 @@ button {
     .mobile-top-image {
         display: block;
     }
-    
+
     .mobile-bottom-image {
         display: block;
     }
