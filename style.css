@@ -408,7 +408,7 @@ input::placeholder {
 .price-range-wrapper {
     width: 60%;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .price-number-wrapper {
@@ -519,11 +519,11 @@ input::placeholder {
     }
 
     .type-btn p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .type-btn i {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .price-range {
