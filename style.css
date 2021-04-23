@@ -1164,6 +1164,7 @@ input::placeholder {
 
     .footer {
         background-color: #FFFFFF;
+        font-size: 10px;
     }
 
     .desktop-flex {
